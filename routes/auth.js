@@ -173,6 +173,7 @@ router.route("/lenderhome").get( async (req, res) => {
       return res.status(200).json({
         message: "Welcome to Lender Home",
       });
+      res.send("This is lender HomePage")
     } catch (e) {
       console.log(e);
       res
@@ -185,6 +186,7 @@ router.route("/borrowerhome").get( async (req, res) => {
       return res.status(200).json({
         message: "Welcome to Borrower Home",
       });
+      res.send("Borrower Page")
     } catch (e) {
       console.log(e);
       res
