@@ -173,7 +173,6 @@ router.route("/lenderhome").get( async (req, res) => {
       return res.status(200).json({
         message: "Welcome to Lender Home",
       });
-      res.send("This is lender HomePage")
     } catch (e) {
       console.log(e);
       res
