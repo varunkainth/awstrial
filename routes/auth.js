@@ -185,7 +185,6 @@ router.route("/borrowerhome").get( async (req, res) => {
       return res.status(200).json({
         message: "Welcome to Borrower Home",
       });
-      res.send("Borrower Page")
     } catch (e) {
       console.log(e);
       res
